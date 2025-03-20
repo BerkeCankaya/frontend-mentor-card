@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-redhat: 'Red Hat Text', sans-serif;
+  --color-redd: hsl(14, 86%, 42%);
+  --color-greenn: hsl(159, 69%, 38%);
+  --color-rose-50: hsl(20, 50%, 98%);
+  --color-rosee-100: hsl(13, 31%, 94%);
+  --color-rosee-300: hsl(14, 25%, 72%);
+  --color-rosee-400: hsl(7, 20%, 60%);
+  --color-rosee-500: hsl(12, 20%, 44%);
+  --color-rosee-900: hsl(14, 65%, 9%);
+}
