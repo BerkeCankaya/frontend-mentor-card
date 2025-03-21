@@ -136,11 +136,11 @@ function App() {
   const [ModalPageOpen, setModalPageOpen] = useState(false);
   
   return (
-   <div className="min-h-screen flex justify-center">
-    <div className='min-w-[85%] pt-[75px] flex'>
-      <div className='w-[70%] h-full'>
-        <h1 className="pb-5 pl-14 text-rosee-900 font-redhat  text-4xl font-extrabold">Desserts</h1>
-        <div className='gap-y-2 w-full h-full grid grid-cols-3 grid-rows-3 place-items-center'>
+   <div className="min-h-screen flex justify-center ">
+    <div className='min-w-[85%] pt-[75px] flex max-md:flex-col max-md:items-center '>
+      <div className='w-[70%] h-full max-md:w-[80%] max-sm:flex max-sm:flex-col'>
+        <h1 className="pb-5 pl-14 max-sm:pl-0 max-sm:text-4xl text-rosee-900 font-redhat  text-4xl font-extrabold">Desserts</h1>
+        <div className='gap-2 w-full h-full grid grid-cols-3 grid-rows-3 place-items-center max-xl:gap-6 max-lg:gap-2 max-lg:grid-cols-2 max-lg:grid-rows-4 max-md:grid-cols-1 max-md:grid-rows-9 max-sm:gap-y-5'>
           {data.map((item) => 
             <Card 
             key={item.id}
@@ -156,8 +156,8 @@ function App() {
           )}
         </div>
       </div>
-      <div className='w-[30%] h-full'>
-          <h1 className='p-6 font-redhat text-redd text-xl font-extrabold'>Your Cart ({cart.length})</h1>
+      <div className='w-[30%] h-full max-md:w-full max-md:pt-20'>
+          <h1 className='p-6 max-md:pl-20  font-redhat text-redd text-xl font-extrabold'>Your Cart ({cart.length})</h1>
           {cart.length == 0 ? (
           <div className='flex flex-col items-center h-full'>
           <img className='w-[150px] h-[150px]' src={EmptyCard} alt="" />
