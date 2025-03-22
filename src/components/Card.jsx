@@ -5,7 +5,7 @@ import { HiMiniMinus } from "react-icons/hi2";
 
 const Card = ({ image, title, description, price, onAddToCart, quantity, onIncrease, onDecrease }) => {
   return (
-    <div className='max-lg:w-full max-lg:h-full'>
+    <div className='max-md:w-full max-md::h-full'>
       <div className='flex justify-center relative'>
         <img  className={`w-64 h-64 max-xl:w-54 max-xl:h-54 max-md:w-full rounded-xl ${quantity > 0 ? 'border-3 border-redd' : ''}`}   src={image} alt="image-food" />
         <div

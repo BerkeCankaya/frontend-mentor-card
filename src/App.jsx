@@ -196,17 +196,17 @@ function App() {
               </div>
               {ModalPageOpen && (
                 <div className='fixed flex justify-center items-center inset-0 bg-black/50 z-40'>
-                   <div className="bg-rosee-100  rounded-2xl w-[500px] min-h-[550px] shadow-2xl relative flex justify-center pt-4">
+                   <div className="bg-rosee-100  rounded-2xl  min-w-[500px] min-h-[550px]  max-sm:min-w-[80%] max-sm:min-h-[50%] shadow-2xl relative flex justify-center pt-4">
                       <div className='w-[90%] h-[90%] p-4 flex flex-col gap-y-4 '>
                         <div className='w-full h-1/4'>
                         <img className='w-10 h-10' src={IconConfirmed} alt="" />
                         </div>
                         <div className='flex flex-col gap-y-3'>
-                        <h1 className='text-3xl text-rosee-900 font-bold'>Order Confirmed</h1>
-                        <h3 className='text-sm text-rosee-900 font-light'>We hope you enjoy your food!</h3>
+                        <h1 className='text-3xl text-rosee-900 font-bold max-sm:text-xl'>Order Confirmed</h1>
+                        <h3 className='text-sm text-rosee-900 font-light max-sm:text-[12px]'>We hope you enjoy your food!</h3>
                         </div>
                         {cart.map((item,index) => 
-                        <div key={index} className='w-full  min-h-1/2 pl-8 flex justify-between'>
+                        <div key={index} className='w-full  min-h-1/2 pl-8 max-xl:pl-0 flex justify-between'>
                           <div className='flex items-center gap-x-4'>
                             <img className='w-12 h-12 rounded' src={item.image} alt="" />
                             <div className='flex flex-col justify-between gap-y-3'>
@@ -223,7 +223,7 @@ function App() {
                         </div>
                         )} 
                         <div className='flex flex-col gap-y-4 '>
-                          <div className='flex items-center justify-between p-2 pl-4'>
+                          <div className='flex items-center justify-between p-2 pt-6 pl-4'>
                           <h1 className='text-rosee-900 font-light text-sm'>Order Total</h1>
                           <h1 className='text-xl text-rosee-900 font-semibold'>${totalPrice.toFixed(2)}</h1>
                           </div>
